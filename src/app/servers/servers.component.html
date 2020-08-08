@@ -1,2 +1,13 @@
 <app-server></app-server>
 <app-server></app-server>
+<input 
+    [value]="userName"
+    (input)="changeName($event)"
+>
+<p>{{ userName }}</p>
+<h2>{{ isNull }}</h2>
+<button
+(click)="resetNull()"
+>
+    reset 
+</button>
