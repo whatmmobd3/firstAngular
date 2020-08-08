@@ -1,0 +1,10 @@
+<p>fn works!</p>
+<button (click)="onToggle()">Display me</button>
+<p *ngIf="isShowing">{{ lorem }}</p>
+<div
+  *ngFor="let e of log"
+  [ngStyle]="{ backgroundColor: e > 4 ? 'blue' : 'transparent' }"
+  [ngClass]="{ colorText: e > 4 }"
+>
+  {{ e }}
+</div>

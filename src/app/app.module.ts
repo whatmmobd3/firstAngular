@@ -11,6 +11,7 @@ import { ServersComponent } from './servers/servers.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { TestComponent } from './test/test.component';
+import { FnComponent } from './fn/fn.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { TestComponent } from './test/test.component';
     SuccessAlertComponent,
     WarningAlertComponent,
     TestComponent,
+    FnComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
