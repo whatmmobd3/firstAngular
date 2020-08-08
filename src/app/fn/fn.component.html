@@ -2,9 +2,9 @@
 <button (click)="onToggle()">Display me</button>
 <p *ngIf="isShowing">{{ lorem }}</p>
 <div
-  *ngFor="let e of log"
-  [ngStyle]="{ backgroundColor: e > 4 ? 'blue' : 'transparent' }"
-  [ngClass]="{ colorText: e > 4 }"
+  *ngFor="let e of log; let i = index"
+  [ngStyle]="{ backgroundColor: i > 4 ? 'blue' : 'transparent' }"
+  [ngClass]="{ colorText: i > 4 }"
 >
   {{ e }}
 </div>
