@@ -1,0 +1,11 @@
+<p>test works!</p>
+
+<input type="text" [(ngModel)]="course" />
+<p>{{ course }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="course === '' ? true : false"
+  (click)="course = ''"
+>
+  Reset
+</button>
